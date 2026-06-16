@@ -4,10 +4,10 @@
 FROM node:20-alpine AS deps
 WORKDIR /app
 RUN apk add --no-cache openssl libc6-compat
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json .npmrc ./
 # Prisma schema is needed because postinstall runs `prisma generate`.
 COPY prisma ./prisma
-RUN npm ci
+RUN npm ci --legacy-peer-deps
 
 # ---- builder: produce the Next.js standalone output ----
 FROM node:20-alpine AS builder

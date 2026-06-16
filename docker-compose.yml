@@ -1,0 +1,65 @@
+# CareBridge — deploy ĐỘC LẬP cạnh các stack hiện có (natural-beauty / tro-ly-aabw).
+# Tên container: cb-*  · network riêng · cổng app: 127.0.0.1:3200 (đổi sang public nếu cần).
+#
+# Trên VPS:
+#   cd /root/carebridge-web
+#   cp .env.example .env && nano .env      # đặt POSTGRES_PASSWORD, AUTH_SECRET, ADMIN_PASSWORD...
+#   docker compose up -d --build
+# Cập nhật: git pull && docker compose up -d --build
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: cb-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cb_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD chưa đặt trong .env}
+      POSTGRES_DB: carebridge
+    volumes:
+      - cb_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cb_user -d carebridge"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    # Không mở ra ngoài — chỉ app trong network nội bộ truy cập.
+    expose:
+      - "5432"
+
+  # Một lần: áp migration rồi thoát. App chỉ start sau khi việc này thành công.
+  migrate:
+    image: carebridge-web:latest
+    env_file: .env
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: ["node", "prisma-cli/node_modules/prisma/build/index.js", "migrate", "deploy", "--schema=prisma/schema.prisma"]
+    restart: "no"
+
+  app:
+    build: .
+    image: carebridge-web:latest
+    container_name: cb-app
+    restart: unless-stopped
+    env_file: .env
+    depends_on:
+      postgres:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    # Chỉ cổng công khai 3200 (3000/3100 đã bị 2 project kia dùng).
+    ports:
+      - "3200:3000"
+    volumes:
+      - cb_uploads:/app/public/uploads
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 25s
+
+volumes:
+  cb_pgdata:
+  cb_uploads:

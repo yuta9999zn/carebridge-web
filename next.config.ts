@@ -4,7 +4,8 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Build lean standalone server for the Docker image (mirrors existing VPS apps).
+  output: "standalone",
 };
 
 export default withNextIntl(nextConfig);

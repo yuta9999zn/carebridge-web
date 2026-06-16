@@ -1,0 +1,278 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "vision": "Tầm nhìn",
+    "articles": "Bài viết",
+    "contact": "Tư vấn",
+    "booking": "Đặt lịch",
+    "cta": "Đặt lịch tư vấn"
+  },
+  "booking": {
+    "title": "Đặt lịch tư vấn",
+    "lead": "Đặt lịch trao đổi qua online, trực tiếp hoặc điện thoại.",
+    "name": "Họ tên",
+    "organization": "Tên pháp nhân / cơ sở",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "preferredAt": "Ngày giờ mong muốn",
+    "meetingType": "Hình thức",
+    "online": "Online",
+    "inPerson": "Trực tiếp",
+    "phoneType": "Điện thoại",
+    "topic": "Nội dung",
+    "topicPlaceholder": "Vui lòng ghi nội dung muốn trao đổi.",
+    "contactNote": "Vui lòng nhập email hoặc số điện thoại.",
+    "consentPre": "Tôi đồng ý với ",
+    "consentLink": "việc xử lý thông tin cá nhân",
+    "consentPost": ".",
+    "submit": "Gửi yêu cầu đặt lịch",
+    "sending": "Đang gửi...",
+    "successTitle": "Đã nhận yêu cầu đặt lịch.",
+    "successBody": "Người phụ trách sẽ liên hệ xác nhận ngày giờ.",
+    "errorGeneric": "Gửi thất bại. Vui lòng kiểm tra lại."
+  },
+  "categories": { "留学生の声": "Tiếng nói du học sinh", "実績数値": "Số liệu đạt được", "お知らせ": "Thông báo", "コラム": "Chuyên mục" },
+  "hero": {
+    "titleLead": "Cho hiện trường điều dưỡng,",
+    "titleAccent": "nguồn nhân lực quốc tế đáng tin cậy",
+    "body": "Hai công ty — cơ sở điều dưỡng và cơ quan hỗ trợ đăng ký — đồng hành từ khâu giới thiệu nhân lực kỹ năng đặc định đến việc xây dựng nhân lực tại hiện trường.",
+    "lockupA": "momokichi",
+    "lockupARole": "Cơ sở điều dưỡng",
+    "lockupB": "ITM Japan",
+    "lockupBRole": "Cơ quan hỗ trợ đăng ký",
+    "banner": "Trong 3 tháng kể từ khi vào làm, nhân lực có thể làm theo chỉ dẫn của nhân viên điều dưỡng."
+  },
+  "trust": {
+    "aria": "Thế mạnh của chúng tôi",
+    "items": [
+      "Góc nhìn hiện trường từ cơ sở điều dưỡng",
+      "Hỗ trợ tiếp nhận từ cơ quan hỗ trợ đăng ký",
+      "Từ đào tạo trước nhập cảnh đến hỗ trợ sau khi vào làm",
+      "Phục vụ toàn quốc"
+    ]
+  },
+  "about": {
+    "divider": "Về chúng tôi",
+    "lead": "Không bó buộc vào một quốc gia cụ thể — nhân lực phù hợp với hiện trường điều dưỡng, từ quốc gia phù hợp.",
+    "companyA": {
+      "no": "1",
+      "kicker": "Cơ sở điều dưỡng am hiểu hiện trường",
+      "name": "Công ty CP momokichi",
+      "role": "Điều dưỡng ban ngày・Điều dưỡng tại nhà・Dụng cụ phúc lợi",
+      "desc": "Tập đoàn triển khai dịch vụ điều dưỡng ban ngày, điều dưỡng tại nhà và dụng cụ phúc lợi, tập trung tại Nishinomiya・Kobe・Akashi.",
+      "points": [
+        "Tư vấn xây dựng nhân lực từ góc nhìn hiện trường điều dưỡng",
+        "Tư vấn từ kinh nghiệm tự tiếp nhận・đào tạo thực tập sinh kỹ năng và kỹ năng đặc định"
+      ],
+      "link": "Xem hồ sơ công ty"
+    },
+    "companyB": {
+      "no": "2",
+      "kicker": "Cơ quan hỗ trợ đăng ký am hiểu giáo dục người nước ngoài",
+      "name": "Công ty CP ITM Japan",
+      "role": "Cơ quan hỗ trợ đăng ký ／ Giới thiệu việc làm có thu phí",
+      "desc": "Tập đoàn triển khai trong và ngoài nước dịch vụ tuyển dụng・giáo dục tiếng Nhật・quản lý lưu trú cho nhân lực các nước châu Á, trọng tâm là Việt Nam.",
+      "points": [
+        "Giáo dục cơ bản về tiếng Nhật・văn hóa Nhật・điều dưỡng với tư cách cơ sở giáo dục",
+        "Hỗ trợ ổn định cho người nước ngoài làm việc tại doanh nghiệp Nhật trên toàn quốc"
+      ],
+      "visaLabel": "Tư cách lưu trú phụ trách",
+      "visas": ["Thực tập kỹ năng", "Kỹ năng đặc định", "Internship", "Kỹ sư・Tri thức・NV quốc tế"],
+      "stats": [
+        { "value": "4", "label": "Trường tiếng Nhật ở nước ngoài" },
+        { "value": "50", "label": "Giáo viên tiếng Nhật (bình quân)" },
+        { "value": "2,500", "label": "Đang quản lý thường xuyên (bình quân)" },
+        { "value": "22,000", "label": "Tổng tích lũy (người)" }
+      ],
+      "statsNote": "※ Tính đến cuối tháng 6/2026",
+      "regLabel": "Số đăng ký cơ quan hỗ trợ đăng ký",
+      "reg": "25登-011576",
+      "licenseLabel": "Số giấy phép giới thiệu việc làm có thu phí",
+      "license": "14-ユ-302518"
+    }
+  },
+  "reasons": {
+    "eyebrow": "Why Choose Us",
+    "title": "Lý do được tin chọn",
+    "lead": "Nhờ sự phối hợp giữa hai công ty, chúng tôi hỗ trợ nhất quán từ khâu tư vấn trước tuyển dụng đến giữ chân sau khi vào làm.",
+    "items": [
+      { "title": "Kết nối dựa trên sự am hiểu hiện trường điều dưỡng", "desc": "Từ góc nhìn của cơ sở điều dưỡng, chúng tôi làm rõ hình mẫu nhân lực mà cơ sở cần và hướng tới đề xuất ứng viên phù hợp với hiện trường." },
+      { "title": "Hệ thống nhất quán kết nối tuyển dụng・đào tạo・hỗ trợ tiếp nhận", "desc": "Từ tuyển dụng・tuyển chọn・đào tạo ở nước ngoài đến thủ tục tư cách lưu trú・chuẩn bị tiếp nhận, tất cả được kết nối trong một hệ thống." },
+      { "title": "Hỗ trợ giữ chân kéo dài đến sau khi vào làm", "desc": "Chúng tôi tiếp tục hỗ trợ giữ chân sau khi vào làm qua phỏng vấn định kỳ, học tiếng Nhật và theo sát các vấn đề tại hiện trường." }
+    ]
+  },
+  "talent": {
+    "eyebrow": "Our Talent",
+    "title": "Nhân lực chúng tôi giới thiệu",
+    "lead": "Chúng tôi giới thiệu các ứng viên đáp ứng yêu cầu của kỹ năng đặc định «điều dưỡng», đã qua tuyển chọn và đào tạo trước.",
+    "items": [
+      "Nhân lực đáp ứng yêu cầu của kỹ năng đặc định «điều dưỡng»",
+      "Năng lực tiếng Nhật đáp ứng yêu cầu như JLPT N4 hoặc JFT-Basic",
+      "Đỗ các kỳ thi cần thiết như kỳ thi đánh giá kỹ năng điều dưỡng",
+      "Xác nhận con người・năng khiếu qua phỏng vấn",
+      "Hoàn thành đào tạo tiếng Nhật・điều dưỡng cơ bản trước nhập cảnh"
+    ],
+    "note": "Kinh nghiệm, năng khiếu và năng lực tiếng Nhật của mỗi ứng viên đều khác nhau. Chi tiết sẽ được trình bày khi trao đổi."
+  },
+  "stats": {
+    "eyebrow": "Thành tích",
+    "title": "Thành tích đáng tin cậy",
+    "labels": ["Đã giới thiệu (người)", "Tỷ lệ đỗ phỏng vấn", "Số cơ sở hợp tác"]
+  },
+  "process": {
+    "no": "5",
+    "title": "Từ tư vấn đến gắn bó ổn định",
+    "phases": [
+      { "label": "Trước khi sang Nhật", "tone": "rose", "steps": [
+        { "owner": "momokichi", "color": "rose", "text": "Tư vấn・đề xuất" },
+        { "owner": "ITM Japan", "color": "blue", "text": "Ký hợp đồng・phỏng vấn・tuyển dụng" },
+        { "owner": "ITM Japan", "color": "blue", "text": "Giáo dục tiếng Nhật・văn hóa Nhật・điều dưỡng cơ bản" }
+      ] },
+      { "label": "Sang Nhật・tiếp nhận", "tone": "blue", "steps": [
+        { "owner": "ITM Japan", "color": "blue", "text": "Nhập cảnh・tiếp nhận" }
+      ] },
+      { "label": "Sau khi vào làm (hiện trường)", "tone": "blue", "steps": [
+        { "owner": "ITM-MOMO", "color": "both", "text": "Giáo dục hỗ trợ để gắn bó ổn định" }
+      ] }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Câu hỏi thường gặp",
+    "items": [
+      { "q": "Từ lúc tư vấn đến khi vào làm mất bao lâu?", "a": "Từ khâu tuyển chọn ứng viên, xin・nhận tư cách lưu trú đến thủ tục nhập cảnh và bắt đầu làm việc, thông thường mất khoảng vài tháng. Vì còn thay đổi theo thời điểm và điều kiện, mốc thời gian cụ thể sẽ được trao đổi khi tư vấn." },
+      { "q": "Trình độ tiếng Nhật của ứng viên ra sao?", "a": "Chúng tôi giới thiệu ứng viên đáp ứng yêu cầu của kỹ năng đặc định «điều dưỡng», tương đương JLPT N4 hoặc JFT-Basic. Năng lực tiếng Nhật mỗi người mỗi khác, quý vị có thể xác nhận qua phỏng vấn." },
+      { "q": "Có cần chuẩn bị nhà ở không?", "a": "Về cơ bản do cơ sở tiếp nhận chuẩn bị, nhưng chúng tôi có thể hỗ trợ từ tìm nhà, ký hợp đồng đến sắp xếp vật dụng sinh hoạt. Vui lòng trao đổi để biết chi tiết." },
+      { "q": "Sau khi vào làm có những hỗ trợ gì?", "a": "Chúng tôi tiếp tục hỗ trợ giữ chân qua phỏng vấn định kỳ, học tiếng Nhật, theo sát đời sống・công việc và xử lý các vấn đề phát sinh tại hiện trường." },
+      { "q": "Phí bao gồm những gì?", "a": "Phí giới thiệu đã bao gồm phí xin tư cách lưu trú. Phí ủy thác hỗ trợ tính theo tháng. Một số khoản như chi phí đi lại hay hỗ trợ chỗ ở tính riêng theo thực phí. Chi tiết vui lòng xem phần chi phí." },
+      { "q": "Cơ sở lần đầu tuyển người nước ngoài có thể tư vấn không?", "a": "Có. Chúng tôi hỗ trợ ngay từ buổi tư vấn đầu tiên, bao gồm cả việc xây dựng chế độ và hệ thống tiếp nhận. Hãy liên hệ thoải mái với chúng tôi." }
+    ]
+  },
+  "education": {
+    "no": "3",
+    "title": "Chính giáo dục tạo nên nhân lực vững vàng",
+    "lead1": "Điều hiện trường điều dưỡng cần là nhân lực có thể làm được việc ngay. Và yếu tố lớn nhất tạo nên nhân lực đó chính là giáo dục.",
+    "lead2": "Để đào tạo nhân lực thực sự dùng được, không thể thiếu cả hai: kiến thức hiện trường điều dưỡng và kiến thức giáo dục người nước ngoài.",
+    "proA": { "tag": "Chuyên gia điều dưỡng", "name": "momokichi", "items": ["Hướng dẫn kiến thức・kỹ thuật điều dưỡng", "Chăm sóc cơ thể・cung cấp dịch vụ cho người sử dụng"] },
+    "proB": { "tag": "Chuyên gia giáo dục", "name": "ITM Japan", "items": ["Giáo dục tiếng Nhật・thuật ngữ chuyên ngành điều dưỡng", "Văn hóa Nhật・lễ nghi", "Tuyển dụng・tuyển chọn ở nước ngoài"] },
+    "centerLabel": "Nhân lực quốc tế mà nhân viên điều dưỡng cần",
+    "history": "Từ năm 2019, chúng tôi cùng vận hành trung tâm giáo dục điều dưỡng tại Hà Nội (Việt Nam), bố trí giảng viên người Nhật là điều dưỡng viên (kaigofukushishi) để thực hiện nền giáo dục đạt chuẩn cao nhất ngành. Cơ chế đó vẫn tiếp tục đến nay và đang mở rộng sang các quốc gia mới.",
+    "highlightLabel": "Nhân lực chúng tôi cung cấp",
+    "highlight": "Qua đào tạo trước nhập cảnh + 3 tháng sau nhập cảnh, nhân lực có thể làm theo chỉ dẫn của nhân viên điều dưỡng"
+  },
+  "nepal": {
+    "no": "4",
+    "title": "Vì sao lúc này chúng tôi đề xuất Nepal",
+    "lead": "\"Quốc gia phù hợp\" với hiện trường điều dưỡng — đó là Nepal. Riêng trong lĩnh vực điều dưỡng, lý do đề xuất Nepal là rất rõ ràng.",
+    "items": [
+      { "title": "Nhiều nhân lực nữ mong muốn làm điều dưỡng", "desc": "Nhiều phụ nữ mong muốn làm điều dưỡng nên có nhiều lựa chọn nhân sự. Dễ đáp ứng cả những hiện trường cần nhân viên nữ." },
+      { "title": "Gắn bó, ít nghỉ việc", "desc": "Nhiều người muốn làm việc lâu dài ở Nhật hơn là về nước, nên gắn bó ổn định và lâu dài." },
+      { "title": "Dễ tiếp thu tiếng Nhật", "desc": "Thị trường nhân lực có nhiều người học tiếng Nhật, ngữ pháp lại gần với tiếng Nhật nên tiếp thu nhanh." },
+      { "title": "Tính cách và văn hóa hợp với điều dưỡng", "desc": "Văn hóa chăm sóc người cao tuổi đã ăn sâu, nhiều người ôn hòa và chân thật, dễ hòa nhập với hiện trường điều dưỡng." }
+    ]
+  },
+  "cost": {
+    "no": "6",
+    "title": "Chi phí dịch vụ",
+    "cards": [
+      { "name": "Phí giới thiệu", "price": "330,000", "unit": "円/người", "note": "Đã bao gồm phí xin tư cách lưu trú" },
+      { "name": "Phí quản lý", "price": "25,000", "unit": "円/tháng", "note": "Trao đổi theo số lượng tuyển dụng của một cơ sở" }
+    ],
+    "includedLabel": "Bao gồm trong phí",
+    "included": ["Đơn xin gia hạn thời gian lưu trú", "Đưa đón khi xuất nhập cảnh", "Bảo hiểm tổng hợp cho người nước ngoài"],
+    "extraLabel": "Tính riêng theo thực phí",
+    "extra": ["Chi phí đi lại (vé máy bay nhập cảnh)", "Hỗ trợ chỗ ở (sắp xếp ký túc)", "Gửi hành lý", "Vé máy bay về nước (khi chọn về nước lúc hết hạn)"],
+    "taxNote": "※ Tất cả giá hiển thị chưa bao gồm thuế"
+  },
+  "finalCta": {
+    "title": "Về việc tuyển dụng nhân lực nước ngoài, trước hết hãy cho chúng tôi biết tình hình của quý vị.",
+    "lead": "Dù đang ở giai đoạn cân nhắc hay đã có nhu cầu cụ thể đều được. Chúng tôi sẽ hướng dẫn phù hợp với tình hình của quý vị.",
+    "bookLabel": "Đặt lịch tư vấn miễn phí",
+    "bookSub": "Dành cho quý vị muốn chọn ngày giờ để trao đổi",
+    "contactLabel": "Gửi liên hệ",
+    "contactSub": "Dành cho quý vị muốn gửi câu hỏi hay tình hình tuyển dụng qua form"
+  },
+  "closing": {
+    "title": "Hãy liên hệ tư vấn ngay",
+    "lead": "Cân nhắc triển khai hay tư vấn nhân lực — đều được.",
+    "personLabel": "Phụ trách",
+    "person": "Obayashi",
+    "personCompany": "Công ty CP momokichi",
+    "tel": "Tư vấn qua điện thoại",
+    "mail": "Tư vấn qua email"
+  },
+  "contact": {
+    "eyebrow": "Liên hệ",
+    "title": "Hãy liên hệ tư vấn ngay",
+    "lead": "Cân nhắc triển khai hay tư vấn nhân lực — đều được.",
+    "personLabel": "Phụ trách",
+    "person": "Obayashi",
+    "personCompany": "Công ty CP momokichi",
+    "telNote": "(Ngày thường 9:00 - 18:00)",
+    "mail": "Tư vấn qua email",
+    "company": "Tên pháp nhân / cơ sở",
+    "name": "Người phụ trách",
+    "email": "Địa chỉ email",
+    "message": "Nội dung liên hệ",
+    "messagePlaceholder": "Vui lòng ghi yêu cầu nhân lực hoặc nội dung cần tư vấn.",
+    "consentPre": "Tôi đồng ý với ",
+    "consentLink": "việc xử lý thông tin cá nhân",
+    "consentPost": ".",
+    "submit": "Gửi thông tin",
+    "sending": "Đang gửi...",
+    "successTitle": "Cảm ơn bạn đã gửi.",
+    "successBody": "Người phụ trách sẽ sớm liên hệ lại với bạn.",
+    "errorGeneric": "Gửi thất bại. Vui lòng kiểm tra lại thông tin."
+  },
+  "articles": {
+    "eyebrow": "Báo cáo",
+    "title": "Bài viết & Báo cáo hoạt động",
+    "lead": "Tiếng nói du học sinh, số liệu đạt được, thông báo và chuyên mục — xem theo từng danh mục.",
+    "all": "Tất cả",
+    "featured": "Mới nhất",
+    "latest": "Bài mới",
+    "mostRead": "Bài đọc nhiều",
+    "related": "Bài liên quan",
+    "back": "Về danh sách bài viết"
+  },
+  "privacy": {
+    "title": "Xử lý thông tin cá nhân",
+    "lead": "Công ty CP Momokichi × ITM Japan tuân thủ Luật bảo vệ thông tin cá nhân (APPI) và xử lý thông tin cá nhân một cách phù hợp.",
+    "items": [
+      { "h": "1. Mục đích sử dụng", "p": "Sử dụng để phản hồi liên hệ・tư vấn và giới thiệu dịch vụ nhân lực." },
+      { "h": "2. Cung cấp cho bên thứ ba", "p": "Trừ trường hợp theo quy định pháp luật, không cung cấp cho bên thứ ba khi chưa có sự đồng ý của chủ thể." },
+      { "h": "3. Quản lý an toàn", "p": "Áp dụng các biện pháp an toàn phù hợp để ngăn truy cập trái phép・rò rỉ thông tin cá nhân." },
+      { "h": "4. Công khai・chỉnh sửa・xóa", "p": "Theo yêu cầu của chủ thể, đáp ứng việc công khai・chỉnh sửa・xóa dữ liệu cá nhân đang lưu giữ." },
+      { "h": "5. Đầu mối liên hệ", "p": "Mọi thắc mắc về xử lý thông tin cá nhân, vui lòng liên hệ qua form." }
+    ]
+  },
+  "admin": {
+    "panel": "Trang quản trị",
+    "nav": { "dashboard": "Bảng điều khiển", "articles": "Quản lý bài viết", "categories": "Quản lý chuyên mục", "content": "Quản lý nội dung", "leads": "Yêu cầu tư vấn", "bookings": "Quản lý đặt lịch", "users": "Quản lý người dùng" },
+    "categories": { "subtitle": "Quản lý chuyên mục bài viết & tên đa ngôn ngữ.", "add": "Thêm mới", "list": "Danh sách" },
+    "content": { "subtitle": "Sửa nội dung trang About・Vision theo nhiều ngôn ngữ." },
+    "users": { "title": "Quản lý người dùng", "subtitle": "Tài khoản quản trị & phân quyền (chỉ Super Admin).", "name": "Họ tên", "password": "Mật khẩu", "role": "Vai trò", "status": "Trạng thái", "actions": "Thao tác", "add": "Thêm", "disable": "Vô hiệu", "enable": "Kích hoạt" },
+    "logout": "Đăng xuất",
+    "viewSite": "Xem website",
+    "search": "Tìm kiếm",
+    "create": "Tạo mới",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "update": "Cập nhật",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "all": "Tất cả",
+    "empty": "Không có dữ liệu.",
+    "leadStatus": { "New": "Mới", "In progress": "Đang xử lý", "Done": "Hoàn thành", "Closed": "Đã đóng", "Spam": "Spam" },
+    "dashboard": { "title": "Bảng điều khiển", "subtitle": "Xem nhanh tình trạng website.", "articles": "Bài viết", "inquiries": "Yêu cầu tư vấn", "bookings": "Đặt lịch", "published": "Đã đăng", "newCount": "Mới", "pending": "Chờ xác nhận", "quick": "Thao tác nhanh", "newArticle": "＋ Tạo bài viết mới", "checkInquiries": "Xem yêu cầu tư vấn" },
+    "leads": { "title": "Yêu cầu tư vấn (Lead)", "subtitle": "Danh sách yêu cầu gửi từ form trên website.", "hDate": "Thời gian nhận", "hFacility": "Pháp nhân / cơ sở", "hContact": "Người phụ trách", "hContactInfo": "Liên hệ", "hStatus": "Trạng thái", "empty": "Chưa có yêu cầu nào." },
+    "bookings": { "title": "Quản lý đặt lịch", "subtitle": "Danh sách & quản lý trạng thái đặt lịch. Chờ xác nhận → Đang tiến hành → Hoàn thành / Đã hủy.", "hDate": "Thời gian nhận", "hCustomer": "Khách hàng", "hContact": "Liên hệ", "hPreferred": "Ngày giờ hẹn", "hType": "Hình thức", "hStatus": "Trạng thái / Thao tác", "reason": "Lý do", "reasonPh": "Lý do hủy", "empty": "Chưa có đặt lịch nào.", "st_wait": "Chờ xác nhận", "st_progress": "Đang tiến hành", "st_done": "Hoàn thành", "st_cancel": "Đã hủy" },
+    "articles": { "title": "Quản lý bài viết", "searchPh": "Tìm theo tiêu đề / danh mục / tag", "hTitle": "Tiêu đề", "hCategory": "Danh mục", "hDate": "Ngày", "hStatus": "Trạng thái", "hActions": "Thao tác", "published": "Đã đăng", "draft": "Nháp", "empty": "Chưa có bài viết.", "createTitle": "Tạo bài viết", "editTitle": "Sửa bài viết" },
+    "form": { "title": "Tiêu đề", "category": "Danh mục", "status": "Trạng thái", "slug": "Slug (URL)", "date": "Ngày (YYYY.MM.DD)", "time": "Giờ (HH:MM)", "author": "Tác giả", "tags": "Tag (cách nhau bằng dấu phẩy)", "lead": "Sapo (đoạn dẫn)", "excerpt": "Tóm tắt (cho thẻ danh sách)", "body": "Nội dung", "bodyHint": "Cú pháp: ## tiêu đề ・ > trích dẫn ・ [img] chú thích ảnh ・ còn lại là đoạn văn", "translations": "Bản dịch (để trống = dùng bản gốc tiếng Nhật)", "thumbnail": "Ảnh đại diện", "uploadSelect": "Chọn ảnh", "uploadChange": "Đổi ảnh", "uploadRemove": "Xóa", "uploadLoading": "Đang tải lên...", "uploadHint": "JPEG / PNG / WebP・tối đa 10MB (tự tối ưu về WebP, rộng tối đa 1600px)" },
+    "login": { "title": "Đăng nhập quản trị", "email": "Email", "password": "Mật khẩu", "submit": "Đăng nhập", "loading": "Đang đăng nhập...", "toRegister": "Đăng ký", "toForgot": "Quên mật khẩu?" },
+    "register": { "title": "Đăng ký", "subtitle": "Tạo tài khoản quản trị", "name": "Họ tên", "email": "Email", "password": "Mật khẩu (≥ 8 ký tự)", "submit": "Đăng ký", "loading": "Đang đăng ký...", "have": "Đã có tài khoản?", "toLogin": "Đăng nhập" },
+    "forgot": { "title": "Đặt lại mật khẩu", "subtitle": "Nhập email đã đăng ký", "submit": "Gửi liên kết đặt lại", "loading": "Đang gửi...", "sent": "Nếu tài khoản tồn tại, chúng tôi đã gửi hướng dẫn đặt lại.", "devLink": "(Liên kết DEV)", "back": "Về đăng nhập" },
+    "reset": { "title": "Đặt mật khẩu mới", "newPassword": "Mật khẩu mới (≥ 8 ký tự)", "submit": "Cập nhật mật khẩu", "loading": "Đang cập nhật...", "done": "Đã đặt lại mật khẩu. Đang chuyển về đăng nhập…", "invalid": "Liên kết không hợp lệ.", "back": "Về đăng nhập" }
+  }
+}

@@ -1,26 +1,97 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* =========================================================================
+   CareBridge theme
+   - Bảng màu mới (Home redesign): teal / sage / ivory / mint / gold.
+   - Giữ lại token cũ (cream/terracotta/navy…) cho các trang đã xây sẵn
+     (/about, /vision, /articles, /booking, /contact) để không làm hỏng chúng.
+   ========================================================================= */
+@theme {
+  /* ---- Bảng màu mới (design tokens) ---- */
+  --color-primary: #175c56; /* deep teal — header, heading, primary CTA */
+  --color-primary-hover: #104842; /* hover/active */
+  --color-secondary: #7fa89a; /* sage — icon, badge, timeline */
+  --color-mint: #eaf3ef; /* nền section nhẹ */
+  --color-ivory: #f8f6f0; /* nền chính ấm */
+  --color-surface: #ffffff; /* card, FAQ, bảng giá */
+  --color-accent: #c69a4b; /* gold — chỉ dùng làm điểm nhấn nhỏ */
+  --color-fg: #1f2927; /* text chính */
+  --color-fg-muted: #5f6c68; /* text phụ / metadata */
+  --color-line: #d8e1dd; /* border / divider */
+  --color-danger: #b9473e;
+  --color-ok: #347a5a;
+
+  /* ---- Accent theo WEBデザイン5 (momokichi = hồng, ITM = teal) ---- */
+  --color-rose: #d65b7a; /* momokichi — badge số, hero highlight, CTA chính */
+  --color-rose-hover: #c2466a;
+  --color-rose-soft: #fbe9ef; /* nền card / banner hồng nhạt */
+  --color-blue: #2b6777; /* ITM — tag/在留資格, số liệu, viền card */
+  --color-blue-soft: #e3eef0; /* nền tag/card teal nhạt */
+
+  /* ---- Token cũ (giữ cho các trang khác) ---- */
+  --color-cream: #f6f1ea;
+  --color-cream-card: #ffffff;
+  --color-terracotta: #d97a63;
+  --color-terracotta-dark: #c56852;
+  --color-terracotta-soft: #f3e3dc;
+  --color-navy: #17384d;
+  --color-navy-deep: #0f2636;
+  --color-teal: #2b6777;
+  --color-teal-dark: #1f4e5a;
+  --color-teal-soft: #e3eef0;
+  --color-olive: #9a8f5a;
+  --color-ink: #333333;
+  --color-muted: #666666;
+  --color-hairline: #e2ddd5;
+
+  --font-sans: "Noto Sans JP", "Yu Gothic", "Hiragino Sans", "Meiryo", ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-card: 0 4px 12px rgba(23, 56, 77, 0.05);
+  --shadow-soft: 0 10px 30px rgba(23, 56, 77, 0.08);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-ivory);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Per-locale typography (JA keeps the default Noto Sans JP stack) */
+:lang(vi),
+:lang(en) {
+  font-family: "Inter", "Noto Sans JP", "Hiragino Sans", "Meiryo", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Nepali (Devanagari): dedicated font + extra line-height so marks aren't clipped */
+:lang(ne) {
+  font-family: "Noto Sans Devanagari", "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.85;
+}
+
+/* Focus rõ ràng cho keyboard (WCAG) — teal đậm + viền sáng */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Tôn trọng prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

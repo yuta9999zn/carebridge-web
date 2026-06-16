@@ -1,0 +1,103 @@
+// CareBridge — Prisma schema (PostgreSQL)
+// Đồng bộ với Domain Entity DE-05 (Article), DE-01 (Inquiry), DE-06 (Booking).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Article {
+  id            String   @id @default(uuid())
+  slug          String   @unique
+  category      String
+  title         String
+  date          String // YYYY.MM.DD
+  time          String   @default("09:00")
+  authorName    String   @default("編集部")
+  authorInitial String   @default("編")
+  location      String?
+  readingTime   Int      @default(3)
+  views         Int      @default(0)
+  status        String   @default("published") // published | draft
+  thumbnail     String? // URL ảnh đại diện (upload)
+  lead          String   @default("")
+  excerpt       String   @default("")
+  tags          String[] @default([])
+  body          Json     @default("[]")
+  translations  Json     @default("{}") // { "vi": {title,lead,excerpt,body}, "en": {...}, "ne": {...} }
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([category])
+  @@index([status])
+}
+
+model AdminUser {
+  id               String    @id @default(uuid())
+  email            String    @unique
+  passwordHash     String
+  fullName         String    @default("管理者")
+  role             String    @default("admin") // super_admin | admin | momokichi | itm_japan
+  status           String    @default("active") // active | locked | disabled
+  failedLoginCount Int       @default(0)
+  lastLoginAt      DateTime?
+  resetToken       String?
+  resetTokenExp    DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+}
+
+model ContentBlock {
+  id        String   @id @default(uuid())
+  key       String   @unique // vd: "about.intro.body", "home.hero.titleLead"
+  valueJa   String   @default("")
+  valueVi   String?
+  valueEn   String?
+  valueNe   String?
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id           String   @id @default(uuid())
+  key          String   @unique // định danh ổn định, cũng là giá trị article.category
+  nameJa       String
+  nameVi       String?
+  nameEn       String?
+  nameNe       String?
+  displayOrder Int      @default(0)
+  status       String   @default("active") // active | hidden
+  createdAt    DateTime @default(now())
+}
+
+model Inquiry {
+  id          String   @id @default(uuid())
+  facilityName String
+  contactName String
+  email       String
+  message     String?
+  inquiryType String   @default("Giới thiệu nhân lực")
+  status      String   @default("New") // New | In progress | Done | Closed | Spam
+  createdAt   DateTime @default(now())
+
+  @@index([status])
+}
+
+model Booking {
+  id           String   @id @default(uuid())
+  customerName String
+  organization String?
+  email        String?
+  phone        String?
+  preferredAt  String?
+  meetingType  String? // オンライン | 対面 | 電話
+  topic        String?
+  status       String   @default("受付待ち") // 受付待ち | 進行中 | 完了 | キャンセル
+  cancelReason String?
+  createdAt    DateTime @default(now())
+
+  @@index([status])
+}

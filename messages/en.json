@@ -1,0 +1,278 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "vision": "Vision",
+    "articles": "Articles",
+    "contact": "Contact",
+    "booking": "Booking",
+    "cta": "Book a consultation"
+  },
+  "booking": {
+    "title": "Book a consultation",
+    "lead": "Book a meeting online, in person, or by phone.",
+    "name": "Name",
+    "organization": "Company / facility",
+    "email": "Email",
+    "phone": "Phone",
+    "preferredAt": "Preferred date & time",
+    "meetingType": "Meeting type",
+    "online": "Online",
+    "inPerson": "In person",
+    "phoneType": "Phone",
+    "topic": "Topic",
+    "topicPlaceholder": "Feel free to describe what you'd like to discuss.",
+    "contactNote": "Please enter an email or phone number.",
+    "consentPre": "I agree to the ",
+    "consentLink": "handling of personal information",
+    "consentPost": ".",
+    "submit": "Request booking",
+    "sending": "Sending...",
+    "successTitle": "Your booking has been received.",
+    "successBody": "Our team will contact you to confirm the time.",
+    "errorGeneric": "Sending failed. Please check your input."
+  },
+  "categories": { "留学生の声": "Student voices", "実績数値": "Achievements", "お知らせ": "Announcements", "コラム": "Column" },
+  "hero": {
+    "titleLead": "To the care floor,",
+    "titleAccent": "reliable overseas talent",
+    "body": "Two companies — a care provider and a registration support organization — support you from introducing Specified Skilled Worker talent to building up your people on the floor.",
+    "lockupA": "momokichi",
+    "lockupARole": "Care provider",
+    "lockupB": "ITM Japan",
+    "lockupBRole": "Registration support org.",
+    "banner": "Talent who can follow care staff's instructions within three months of joining."
+  },
+  "trust": {
+    "aria": "Our strengths",
+    "items": [
+      "A field perspective from a care provider",
+      "Acceptance support from a registration support organization",
+      "From pre-arrival education to post-onboarding support",
+      "Nationwide service"
+    ]
+  },
+  "about": {
+    "divider": "About Us",
+    "lead": "Not bound to any one country — talent that fits the care floor, from the country that fits.",
+    "companyA": {
+      "no": "1",
+      "kicker": "A care provider who knows the floor inside out",
+      "name": "momokichi Co., Ltd.",
+      "role": "Day care・Home-visit nursing・Welfare equipment",
+      "desc": "A group operating day care, home-visit nursing and welfare-equipment businesses, centered on Nishinomiya, Kobe and Akashi.",
+      "points": [
+        "Advice on building talent from a care-floor perspective",
+        "Advice grounded in our own experience accepting and educating Specified Skilled Worker and Technical Intern trainees"
+      ],
+      "link": "View company profile"
+    },
+    "companyB": {
+      "no": "2",
+      "kicker": "A registration support org. that knows foreign-talent education inside out",
+      "name": "ITM Japan Co., Ltd.",
+      "role": "Registration support organization ／ Fee-charging job placement",
+      "desc": "A group providing recruitment, Japanese-language education and in-Japan management for talent from Vietnam and other Asian countries, both in Japan and overseas.",
+      "points": [
+        "Basic education in Japanese, Japanese culture and care, delivered as an educational institution",
+        "Nationwide retention support for foreign nationals working at Japanese companies"
+      ],
+      "visaLabel": "Residence statuses we handle",
+      "visas": ["Technical Intern", "Specified Skilled Worker", "Internship", "Engineer/Humanities/Int'l"],
+      "stats": [
+        { "value": "4", "label": "Japanese-language schools abroad" },
+        { "value": "50", "label": "Japanese teachers (avg.)" },
+        { "value": "2,500", "label": "Under ongoing management (avg.)" },
+        { "value": "22,000", "label": "Cumulative track record" }
+      ],
+      "statsNote": "※ As of the end of June 2026",
+      "regLabel": "Registration support org. No.",
+      "reg": "25登-011576",
+      "licenseLabel": "Fee-charging job placement license No.",
+      "license": "14-ユ-302518"
+    }
+  },
+  "reasons": {
+    "eyebrow": "Why Choose Us",
+    "title": "Why We're Chosen",
+    "lead": "By working together, our two companies provide consistent support from pre-hire consultation through retention after onboarding.",
+    "items": [
+      { "title": "Matching grounded in care-field understanding", "desc": "From a care provider's perspective, we clarify the kind of person a facility needs and aim to propose candidates who fit the field." },
+      { "title": "An integrated system linking recruitment, education and acceptance support", "desc": "From overseas recruitment, selection and education to residence-status procedures and acceptance preparation, all linked within a single system." },
+      { "title": "Retention support that continues after onboarding", "desc": "We continue retention-focused support after onboarding, including regular interviews, Japanese-language study and follow-up on field challenges." }
+    ]
+  },
+  "talent": {
+    "eyebrow": "Our Talent",
+    "title": "The talent we introduce",
+    "lead": "We introduce candidates who meet the requirements for the Specified Skilled Worker «Care» field and have completed selection and prior education.",
+    "items": [
+      "Talent who meet the requirements for the Specified Skilled Worker «Care» field",
+      "Japanese ability meeting requirements such as JLPT N4 or JFT-Basic",
+      "Passing required tests such as the Care Skills Evaluation Test",
+      "Confirmation of character and aptitude through interviews",
+      "Completion of pre-arrival Japanese and basic care education"
+    ],
+    "note": "Each candidate's experience, aptitude and Japanese ability differ. We'll explain the details when we talk."
+  },
+  "stats": {
+    "eyebrow": "Track Record",
+    "title": "A Proven Track Record",
+    "labels": ["Placements (people)", "Interview pass rate", "Partner facilities"]
+  },
+  "process": {
+    "no": "5",
+    "title": "From consultation to retention",
+    "phases": [
+      { "label": "Before arrival", "tone": "rose", "steps": [
+        { "owner": "momokichi", "color": "rose", "text": "Consultation・proposal" },
+        { "owner": "ITM Japan", "color": "blue", "text": "Contract・interview・hiring" },
+        { "owner": "ITM Japan", "color": "blue", "text": "Education in Japanese・Japanese culture・care fundamentals" }
+      ] },
+      { "label": "Arrival・acceptance", "tone": "blue", "steps": [
+        { "owner": "ITM Japan", "color": "blue", "text": "Entry・acceptance" }
+      ] },
+      { "label": "After joining (on the floor)", "tone": "blue", "steps": [
+        { "owner": "ITM-MOMO", "color": "both", "text": "Support education for retention" }
+      ] }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "items": [
+      { "q": "How long does it take from consultation to onboarding?", "a": "From candidate selection through residence-status application and acquisition to entry procedures and onboarding, it generally takes several months. Since this varies by timing and conditions, we'll share an estimate when we talk." },
+      { "q": "What level of Japanese do candidates have?", "a": "We introduce candidates who meet the Specified Skilled Worker «Care» requirement of JLPT N4 equivalent or JFT-Basic. Japanese ability differs from person to person, so you can confirm it during the interview." },
+      { "q": "Do we need to prepare housing?", "a": "In principle the receiving facility arranges it, but we can support everything from finding a property to signing the contract and arranging household goods. Please consult us for details." },
+      { "q": "What support is there after onboarding?", "a": "We continue retention-focused support, including regular interviews, ongoing Japanese-language study, daily-life and work follow-up, and responding to challenges that arise on the floor." },
+      { "q": "What is included in the fees?", "a": "The introduction fee includes the residence-status application fee. The support fee is monthly. Some items, such as travel costs and housing support, are charged separately at cost. Please see the cost section for details." },
+      { "q": "Can facilities hiring foreign workers for the first time consult you?", "a": "Yes. We support you from the very first consultation, including building the system and acceptance framework. Please feel free to reach out." }
+    ]
+  },
+  "education": {
+    "no": "3",
+    "title": "What produces reliable talent is education",
+    "lead1": "What the care floor needs is talent ready to contribute. And the single greatest factor in producing that talent is education.",
+    "lead2": "To develop truly capable talent, both are essential — knowledge of the care floor, and knowledge of educating foreign nationals.",
+    "proA": { "tag": "Care professionals", "name": "momokichi", "items": ["Teaching care knowledge and skills", "Physical care・service to users"] },
+    "proB": { "tag": "Education professionals", "name": "ITM Japan", "items": ["Teaching Japanese・care terminology", "Japanese culture・manners", "Overseas recruitment・selection"] },
+    "centerLabel": "The overseas talent care staff want",
+    "history": "Since 2019 we have jointly run a care-education center in Hanoi, Vietnam, with certified care-worker (kaigofukushishi) Japanese instructors delivering education at the industry's highest standard. That system continues today and is expanding to new countries.",
+    "highlightLabel": "The talent we provide",
+    "highlight": "With pre-arrival education plus three months after arrival, talent who can follow care staff's instructions"
+  },
+  "nepal": {
+    "no": "4",
+    "title": "Why we recommend Nepal now",
+    "lead": "The country that \"fits\" the care floor — that is Nepal. When it comes to care, the reasons to recommend Nepal are clear.",
+    "items": [
+      { "title": "Many women aspire to care work", "desc": "Many women hope to work in care, giving a wide choice of candidates. It's easier to meet floors that want female staff." },
+      { "title": "They settle in and rarely leave", "desc": "Many prefer to work long-term in Japan rather than return home, so they stay stably and for the long run." },
+      { "title": "Japanese comes easily", "desc": "The talent market has many people studying Japanese, and the grammar is close to Japanese, so they pick it up quickly." },
+      { "title": "Character and culture suited to care", "desc": "A culture of caring for the elderly is deeply rooted; many are gentle and sincere, fitting in easily on the care floor." }
+    ]
+  },
+  "cost": {
+    "no": "6",
+    "title": "Service fees",
+    "cards": [
+      { "name": "Introduction fee", "price": "330,000", "unit": "yen/person", "note": "Residence-status application fee included" },
+      { "name": "Management fee", "price": "25,000", "unit": "yen/month", "note": "Discussed per number of hires at a facility" }
+    ],
+    "includedLabel": "Included in the fee",
+    "included": ["Residence period renewal application", "Pick-up/drop-off at entry & exit", "Comprehensive insurance for foreign nationals"],
+    "extraLabel": "Charged separately at cost",
+    "extra": ["Travel cost (entry airfare)", "Housing support (arranging dormitory)", "Luggage shipping", "Return airfare (if choosing to return at completion)"],
+    "taxNote": "※ All prices shown exclude tax"
+  },
+  "finalCta": {
+    "title": "When it comes to hiring foreign talent, start by telling us your situation.",
+    "lead": "Whether you're still considering or have a specific request, either is fine. We'll guide you according to your situation.",
+    "bookLabel": "Book a free consultation",
+    "bookSub": "For those who'd like to pick a date and time to talk",
+    "contactLabel": "Send an inquiry",
+    "contactSub": "For those who'd like to send questions or hiring status via form"
+  },
+  "closing": {
+    "title": "Start with a casual consultation",
+    "lead": "Whether you're considering introduction or want to discuss talent — either is welcome.",
+    "personLabel": "Contact",
+    "person": "Obayashi",
+    "personCompany": "momokichi Co., Ltd.",
+    "tel": "Consult by phone",
+    "mail": "Consult by email"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Start with a casual consultation",
+    "lead": "Whether you're considering introduction or just want to discuss talent.",
+    "personLabel": "Contact",
+    "person": "Obayashi",
+    "personCompany": "Momokichi Co., Ltd.",
+    "telNote": "(Weekdays 9:00 - 18:00)",
+    "mail": "Consult by email",
+    "company": "Company / facility name",
+    "name": "Contact person",
+    "email": "Email address",
+    "message": "Your message",
+    "messagePlaceholder": "Feel free to describe your staffing needs or questions.",
+    "consentPre": "I agree to the ",
+    "consentLink": "handling of personal information",
+    "consentPost": ".",
+    "submit": "Send",
+    "sending": "Sending...",
+    "successTitle": "Thank you for your message.",
+    "successBody": "Our team will get back to you shortly.",
+    "errorGeneric": "Sending failed. Please check your input."
+  },
+  "articles": {
+    "eyebrow": "Reports",
+    "title": "Articles & Activity Reports",
+    "lead": "Student voices, achievement figures, announcements and columns — browse by category.",
+    "all": "All",
+    "featured": "Latest",
+    "latest": "Recent",
+    "mostRead": "Most read",
+    "related": "Related",
+    "back": "Back to articles"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lead": "Momokichi Co., Ltd. × ITM Japan complies with the Act on the Protection of Personal Information (APPI) and handles personal data appropriately.",
+    "items": [
+      { "h": "1. Purpose of use", "p": "Used to respond to inquiries/consultations and to provide information about our staffing services." },
+      { "h": "2. Third-party provision", "p": "Except as required by law, we do not provide personal data to third parties without the person's consent." },
+      { "h": "3. Security management", "p": "We take appropriate security measures to prevent unauthorized access to and leakage of personal data." },
+      { "h": "4. Disclosure / correction / deletion", "p": "Upon request, we respond to disclosure, correction, or deletion of retained personal data." },
+      { "h": "5. Contact", "p": "For inquiries about the handling of personal information, please contact us via the form." }
+    ]
+  },
+  "admin": {
+    "panel": "Admin panel",
+    "nav": { "dashboard": "Dashboard", "articles": "Articles", "categories": "Categories", "content": "Content", "leads": "Inquiries", "bookings": "Bookings", "users": "Users" },
+    "categories": { "subtitle": "Manage article categories & multilingual names.", "add": "Add new", "list": "List" },
+    "content": { "subtitle": "Edit About・Vision page content in multiple languages." },
+    "users": { "title": "Users", "subtitle": "Admin accounts & roles (Super Admin only).", "name": "Name", "password": "Password", "role": "Role", "status": "Status", "actions": "Actions", "add": "Add", "disable": "Disable", "enable": "Enable" },
+    "logout": "Log out",
+    "viewSite": "View site",
+    "search": "Search",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "update": "Update",
+    "save": "Save",
+    "cancel": "Cancel",
+    "all": "All",
+    "empty": "No data.",
+    "leadStatus": { "New": "New", "In progress": "In progress", "Done": "Done", "Closed": "Closed", "Spam": "Spam" },
+    "dashboard": { "title": "Dashboard", "subtitle": "An overview of your site.", "articles": "Articles", "inquiries": "Inquiries", "bookings": "Bookings", "published": "Published", "newCount": "New", "pending": "Pending", "quick": "Quick actions", "newArticle": "＋ Create new article", "checkInquiries": "Review inquiries" },
+    "leads": { "title": "Inquiries (Leads)", "subtitle": "Inquiries received from the site form.", "hDate": "Received", "hFacility": "Company / facility", "hContact": "Contact", "hContactInfo": "Contact info", "hStatus": "Status", "empty": "No inquiries yet." },
+    "bookings": { "title": "Bookings", "subtitle": "Booking list & status management. Pending → In progress → Done / Cancelled.", "hDate": "Received", "hCustomer": "Customer", "hContact": "Contact", "hPreferred": "Preferred time", "hType": "Type", "hStatus": "Status / Action", "reason": "Reason", "reasonPh": "Cancel reason", "empty": "No bookings yet.", "st_wait": "Pending", "st_progress": "In progress", "st_done": "Done", "st_cancel": "Cancelled" },
+    "articles": { "title": "Articles", "searchPh": "Search by title / category / tag", "hTitle": "Title", "hCategory": "Category", "hDate": "Date", "hStatus": "Status", "hActions": "Actions", "published": "Published", "draft": "Draft", "empty": "No articles.", "createTitle": "Create article", "editTitle": "Edit article" },
+    "form": { "title": "Title", "category": "Category", "status": "Status", "slug": "Slug (URL)", "date": "Date (YYYY.MM.DD)", "time": "Time (HH:MM)", "author": "Author", "tags": "Tags (comma-separated)", "lead": "Lead (intro)", "excerpt": "Excerpt (for list card)", "body": "Body", "bodyHint": "Syntax: ## heading ・ > quote ・ [img] image caption ・ otherwise a paragraph", "translations": "Translations (leave empty to use Japanese)", "thumbnail": "Thumbnail image", "uploadSelect": "Select image", "uploadChange": "Change image", "uploadRemove": "Remove", "uploadLoading": "Uploading...", "uploadHint": "JPEG / PNG / WebP・up to 10MB (auto-optimized to WebP, max 1600px wide)" },
+    "login": { "title": "Admin login", "email": "Email", "password": "Password", "submit": "Log in", "loading": "Logging in...", "toRegister": "Sign up", "toForgot": "Forgot password?" },
+    "register": { "title": "Sign up", "subtitle": "Create an admin account", "name": "Name", "email": "Email", "password": "Password (min 8 chars)", "submit": "Sign up", "loading": "Signing up...", "have": "Already have an account?", "toLogin": "Log in" },
+    "forgot": { "title": "Reset password", "subtitle": "Enter your registered email", "submit": "Send reset link", "loading": "Sending...", "sent": "If an account exists, we've sent reset instructions.", "devLink": "(DEV link)", "back": "Back to login" },
+    "reset": { "title": "Set new password", "newPassword": "New password (min 8 chars)", "submit": "Update password", "loading": "Updating...", "done": "Password reset. Redirecting to login…", "invalid": "Invalid link.", "back": "Back to login" }
+  }
+}

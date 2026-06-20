@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { IconArrow } from "./Icons";
 
@@ -60,13 +59,15 @@ export default async function About() {
                 </li>
               ))}
             </ul>
-            <Link
-              href="/about"
+            <a
+              href="https://momokichi2011.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-rose underline-offset-4 hover:underline"
             >
               {a.link}
               <IconArrow className="h-4 w-4" />
-            </Link>
+            </a>
           </article>
 
           {/* ITMジャパン — accent teal */}

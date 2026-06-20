@@ -1,11 +1,30 @@
-import { getTranslations } from "next-intl/server";
+import { Fragment } from "react";
+import { getLocale, getTranslations } from "next-intl/server";
 
 // Hero theo WEBデザイン5: nền ivory, tiêu đề 2 dòng (phần nhấn màu hồng),
 // lockup「momokichi × ITMジャパン」, và một dòng banner phía dưới.
 const H1_SIZE = "clamp(28px, 3.2vw, 46px)";
 
+// 文節（phrase）単位で改行を制御するヒーロー本文（日本語のみ）。
+// 各文節を whitespace-nowrap の「分割禁止の塊」にすることで、語の途中
+//（例:「ご紹介」「人材づくり」）で改行されなくなる。折り返しは文節の
+// 切れ目だけで起こるため、PC・iPhone どちらの画面でも文節が整う。
+// 「ご紹介から、」の後に <br> を入れ、PC（md以上）ではここで必ず改行する。
+const JA_BODY_PHRASES = [
+  "介護事業者と",
+  "登録支援機関の",
+  "二社が、",
+  "特定技能人材の",
+  "ご紹介から、", // ← PCはこの後で改行（要求1）。スマホは文節で自然に折り返す（要求2）。
+  "現場の",
+  "人材づくりまで",
+  "支えます。",
+];
+const JA_BODY_PC_BREAK_AFTER = "ご紹介から、";
+
 export default async function Hero() {
   const t = await getTranslations("hero");
+  const locale = await getLocale();
 
   return (
     <section className="px-5 pt-28 pb-12 sm:pt-32 md:px-8 md:pt-36 md:pb-16">
@@ -20,7 +39,14 @@ export default async function Hero() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-xl text-sm leading-8 text-fg-muted md:text-[15px]">
-          {t("body")}
+          {locale === "ja"
+            ? JA_BODY_PHRASES.map((seg) => (
+                <Fragment key={seg}>
+                  <span className="whitespace-nowrap">{seg}</span>
+                  {seg === JA_BODY_PC_BREAK_AFTER && <br className="hidden md:block" />}
+                </Fragment>
+              ))
+            : t("body")}
         </p>
 
         {/* Lockup hai công ty */}

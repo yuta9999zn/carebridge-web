@@ -19,7 +19,7 @@ Website giới thiệu **nhân lực特定技能「介護」 (chủ lực Nepal)
 1. **Header** — sticky, logo「ネパール介護人材ナビ」, nav (ホーム/会社情報/ビジョン/記事/予約/ご相談) có **active state**, CTA「相談予約」→ `/booking`, menu mobile hamburger.
 2. **Hero** — eyebrow「介護 × 特定技能人材」; H1「介護現場に、確かな海外人材を。」; supporting text; lockup「株式会社桃吉 × 株式会社ITMジャパン」; CTA chính「無料相談を予約する」→ `/booking`, phụ「まずは問い合わせる」→ `/contact`.
 3. **Trust strip** — 介護事業者による現場視点 / 登録支援機関による受入支援 / 入国前教育から入職後支援まで / 全国対応.
-4. **私たちについて** — 2 card cân bằng: 桃吉 (bullets + link「会社概要を見る」→ `/about`) và ITMジャパン (bullets + **chỉ giấy phép đã xác nhận**).
+4. **私たちについて** — 2 card cân bằng: 桃吉 (bullets + link「会社概要を見る」→ trang công ty ngoài `https://momokichi2011.com`, mở tab mới) và ITMジャパン (bullets + **chỉ giấy phép đã xác nhận**).
 5. **選ばれる理由** — 介護現場を理解したマッチング / 募集・教育・受入支援をつなぐ一貫体制 / 入職後まで続く定着支援.
 6. **教育体制**「現場で安心して働くための教育」— 3 giai đoạn: 入国前 / 入国・入社時 / 入社後; nêu rõ vai trò 桃吉 (介護現場の知識・技術) + ITMジャパン (日本語教育・外国人支援).
 7. **なぜネパール人材なのか** — trình bày có trách nhiệm + câu lưu ý「国籍だけで判断せず…」.

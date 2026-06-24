@@ -41,9 +41,9 @@ export default async function Process() {
                 {p.steps.map((s) => (
                   <li
                     key={s.text}
-                    className={`flex flex-wrap items-center gap-x-3 gap-y-1 rounded-2xl px-4 py-3.5 ${rowTone[p.tone]}`}
+                    className={`flex items-center gap-x-3 rounded-2xl px-4 py-3.5 ${rowTone[p.tone]}`}
                   >
-                    <span className={`rounded-full px-2.5 py-0.5 text-[11px] font-bold ${pillTone[s.color]}`}>
+                    <span className={`w-24 shrink-0 rounded-full px-2.5 py-0.5 text-center text-[11px] font-bold ${pillTone[s.color]}`}>
                       {s.owner}
                     </span>
                     <span className="text-sm font-medium text-fg">{s.text}</span>

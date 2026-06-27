@@ -7,10 +7,6 @@ const rowTone: Record<Phase["tone"], string> = {
   rose: "bg-rose-soft",
   blue: "bg-blue-soft",
 };
-const labelTone: Record<Phase["tone"], string> = {
-  rose: "bg-rose text-white",
-  blue: "bg-blue text-white",
-};
 const pillTone: Record<Step["color"], string> = {
   rose: "bg-rose text-white",
   blue: "bg-blue text-white",
@@ -34,7 +30,7 @@ export default async function Process() {
         <div className="mt-10 space-y-7">
           {phases.map((p) => (
             <div key={p.label}>
-              <span className={`inline-block rounded-full px-3.5 py-1 text-xs font-bold ${labelTone[p.tone]}`}>
+              <span className="inline-block text-sm font-bold text-fg">
                 {p.label}
               </span>
               <ul className="mt-3 space-y-2.5">

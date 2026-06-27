@@ -4,7 +4,11 @@ import { hashPassword, MAX_FAILED } from "@/lib/auth";
 import { seedArticles, type Article, type Block } from "@/content/articles";
 import { SEED_TRANSLATIONS } from "@/content/seed-translations";
 import { CONTENT_KEYS, contentDefault } from "@/content/cms-schema";
+import { glueJa } from "@/lib/ja-glue";
 import type { Prisma } from "@prisma/client";
+
+/** Trường mã số (không phải văn xuôi) — không chèn WORD JOINER. */
+const NO_GLUE_KEYS = new Set(["about.companyB.reg", "about.companyB.license"]);
 
 /**
  * Kho dữ liệu — PostgreSQL qua Prisma.
@@ -413,6 +417,12 @@ export async function getContent(locale: string): Promise<Record<string, string>
   for (const r of rows) {
     const loc = locale === "vi" ? r.valueVi : locale === "en" ? r.valueEn : locale === "ne" ? r.valueNe : r.valueJa;
     if (loc && loc.trim()) map[r.key] = loc; // admin đã nhập bản dịch locale → ưu tiên
+  }
+  // Tiếng Nhật: ngắt dòng theo 文節 (chèn WORD JOINER) để không cắt giữa từ trên mobile.
+  if (locale === "ja") {
+    for (const k of CONTENT_KEYS) {
+      if (!NO_GLUE_KEYS.has(k)) map[k] = glueJa(map[k]);
+    }
   }
   return map;
 }

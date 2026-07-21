@@ -176,13 +176,13 @@
     "no": "6",
     "title": "Service fees",
     "cards": [
-      { "name": "Introduction fee", "price": "330,000", "unit": "yen/person", "note": "Residence-status application fee included" },
+      { "name": "Introduction fee", "price": "330,000", "unit": "yen/person", "note": "" },
       { "name": "Management fee", "price": "25,000", "unit": "yen/month", "note": "Discussed per number of hires at a facility" }
     ],
     "includedLabel": "Included in the fee",
-    "included": ["Residence period renewal application", "Pick-up/drop-off at entry & exit", "Comprehensive insurance for foreign nationals"],
+    "included": ["Residence-status certification fee", "Pick-up/drop-off at entry & exit"],
     "extraLabel": "Charged separately at cost",
-    "extra": ["Travel cost (entry airfare)", "Housing support (arranging dormitory)", "Luggage shipping", "Return airfare (if choosing to return at completion)"],
+    "extra": ["Travel cost (entry airfare)", "Housing support (arranging dormitory)", "Domestic transportation cost", "Return airfare (if choosing to return at completion)", "Residence period renewal application fee", "Demand letter certification fee (if incurred)"],
     "taxNote": "※ All prices shown exclude tax"
   },
   "finalCta": {

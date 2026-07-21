@@ -26,7 +26,7 @@ export default async function Cost() {
                 <span className="text-3xl font-black md:text-4xl">{c.price}</span>
                 <span className="text-sm font-bold">{c.unit}</span>
               </p>
-              <p className="mt-3 text-xs leading-5 text-fg-muted">{c.note}</p>
+              {c.note ? <p className="mt-3 text-xs leading-5 text-fg-muted">{c.note}</p> : null}
             </article>
           ))}
         </div>

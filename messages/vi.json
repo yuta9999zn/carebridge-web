@@ -176,13 +176,13 @@
     "no": "6",
     "title": "Chi phí dịch vụ",
     "cards": [
-      { "name": "Phí giới thiệu", "price": "330,000", "unit": "円/người", "note": "Đã bao gồm phí xin tư cách lưu trú" },
+      { "name": "Phí giới thiệu", "price": "330,000", "unit": "円/người", "note": "" },
       { "name": "Phí quản lý", "price": "25,000", "unit": "円/tháng", "note": "Trao đổi theo số lượng tuyển dụng của một cơ sở" }
     ],
     "includedLabel": "Bao gồm trong phí",
-    "included": ["Đơn xin gia hạn thời gian lưu trú", "Đưa đón khi xuất nhập cảnh", "Bảo hiểm tổng hợp cho người nước ngoài"],
+    "included": ["Phí xin giấy chứng nhận tư cách lưu trú", "Đưa đón khi xuất nhập cảnh"],
     "extraLabel": "Tính riêng theo thực phí",
-    "extra": ["Chi phí đi lại (vé máy bay nhập cảnh)", "Hỗ trợ chỗ ở (sắp xếp ký túc)", "Gửi hành lý", "Vé máy bay về nước (khi chọn về nước lúc hết hạn)"],
+    "extra": ["Chi phí đi lại (vé máy bay nhập cảnh)", "Hỗ trợ chỗ ở (sắp xếp ký túc)", "Chi phí di chuyển trong nước", "Vé máy bay về nước (khi chọn về nước lúc hết hạn)", "Phí xin gia hạn thời gian lưu trú", "Phí chứng thực demand letter (nếu phát sinh)"],
     "taxNote": "※ Tất cả giá hiển thị chưa bao gồm thuế"
   },
   "finalCta": {

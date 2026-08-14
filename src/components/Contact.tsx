@@ -2,15 +2,14 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { homeContent } from "@/content/home";
 import SectionTitle from "./SectionTitle";
 import { IconPhone, IconMail } from "./Icons";
+import { CONTACT_TEL, CONTACT_TEL_HREF, CONTACT_EMAIL, CONTACT_EMAIL_HREF } from "@/content/site";
 
 type Status = "idle" | "loading" | "sent";
 
 export default function Contact() {
   const t = useTranslations("contact");
-  const { contact } = homeContent;
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
 
@@ -60,23 +59,27 @@ export default function Contact() {
             <span className="ml-2 font-bold text-primary">{t("person")}</span>
             <span className="ml-2">{t("personCompany")}</span>
           </p>
+          {/* Yêu cầu khách 2026-08-14: dùng số ĐT/email thật của 大林 và hiện luôn trong nút. */}
           <div className="mb-10 flex flex-col gap-4 sm:flex-row">
             <a
-              href={`tel:${contact.tel.replace(/[^0-9+]/g, "")}`}
-              className="flex flex-1 items-center justify-center gap-2.5 rounded-full bg-primary px-6 py-4 text-center font-bold text-white transition-colors hover:bg-primary-hover"
+              href={CONTACT_TEL_HREF}
+              className="flex flex-1 flex-col items-center justify-center gap-0.5 rounded-full bg-primary px-5 py-3.5 text-center font-bold text-white transition-colors hover:bg-primary-hover"
             >
-              <IconPhone className="h-5 w-5" />
-              <span>
-                {contact.tel}
-                <span className="ml-1 text-xs font-normal opacity-80">{t("telNote")}</span>
+              <span className="inline-flex items-center gap-2.5">
+                <IconPhone className="h-5 w-5" />
+                {CONTACT_TEL}
               </span>
+              <span className="text-xs font-normal text-white/80">{t("telNote")}</span>
             </a>
             <a
-              href="#contact-form"
-              className="flex flex-1 items-center justify-center gap-2.5 rounded-full border-2 border-primary bg-surface px-6 py-4 font-bold text-primary transition-colors hover:bg-mint"
+              href={CONTACT_EMAIL_HREF}
+              className="flex flex-1 flex-col items-center justify-center gap-0.5 rounded-full border-2 border-primary bg-surface px-5 py-3.5 text-center font-bold text-primary transition-colors hover:bg-mint"
             >
-              <IconMail className="h-5 w-5" />
-              {t("mail")}
+              <span className="inline-flex items-center gap-2.5">
+                <IconMail className="h-5 w-5" />
+                {t("mail")}
+              </span>
+              <span className="max-w-full break-all text-xs font-semibold text-primary/80">{CONTACT_EMAIL}</span>
             </a>
           </div>
 

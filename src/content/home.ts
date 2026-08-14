@@ -66,7 +66,7 @@ export const homeContent = {
   contact: {
     eyebrow: "Contact",
     title: "ご相談・お問い合わせ",
-    tel: "03-XXXX-XXXX",
+    // Số ĐT / email thật nằm ở `src/content/site.ts` (CONTACT_TEL, CONTACT_EMAIL) — đừng đặt lại ở đây.
     telNote: "(平日 9:00 - 18:00)",
     mailLabel: "メールで相談する",
   },

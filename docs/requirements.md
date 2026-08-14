@@ -27,7 +27,7 @@ Website giới thiệu **nhân lực特定技能「介護」 (chủ lực Nepal)
 9. **ご相談から定着まで** — timeline 01–07 (ヒアリング → 人材要件の整理 → 候補者のご提案 → 面接・採用決定 → 在留資格申請・入国準備 → 入国・受入 → 入職後の継続支援), có nhãn công ty phụ trách.
 10. **料金** — minh bạch (xem mục 4), CTA「具体的な費用を相談する」→ `/contact`.
 11. **FAQ** — 6 câu ảnh hưởng quyết định; accordion keyboard/aria accessible.
-12. **Final CTA** (`Closing.tsx`) — card trắng, phụ trách 大林 (momokichi); primary「電話で相談する」và secondary「メールで相談する」. Theo yêu cầu khách 2026-08-14 **hai nút trỏ thẳng tới liên hệ, không qua trang trung gian**: `tel:` / `mailto:` lấy từ `CONTACT_TEL` `CONTACT_EMAIL` trong `src/content/site.ts` (trước đây là `/booking` và `/contact`). **Không đặt form liên hệ trong Home** (form ở `/contact`).
+12. **Final CTA** (`Closing.tsx`) — card trắng, phụ trách 大林 (momokichi); primary「電話で相談する」và secondary「メールで相談する」. Theo yêu cầu khách 2026-08-14 **hai nút trỏ thẳng tới liên hệ, không qua trang trung gian** (trước đây là `/booking` và `/contact`) và **hiện luôn số ĐT / email ngay trong nút** để người dùng đọc được. Nguồn duy nhất: `CONTACT_TEL` / `CONTACT_EMAIL` trong `src/content/site.ts` — trang `/contact` (`Contact.tsx`) cũng dùng đúng hai hằng này, không được ghi lại số/email ở chỗ khác. **Không đặt form liên hệ trong Home** (form ở `/contact`).
 
 ## 3. Phân biệt CTA
 - `/booking` = chọn ngày giờ và **đặt lịch** tư vấn. `/contact` = **gửi câu hỏi/yêu cầu/tình trạng tuyển dụng** qua form. Mọi CTA phải nêu rõ khác biệt này (kèm sub-label).

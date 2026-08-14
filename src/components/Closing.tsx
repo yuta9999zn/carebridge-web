@@ -21,25 +21,26 @@ export default async function Closing() {
           {/* Yêu cầu khách 2026-08-14: gọi/mail trực tiếp cho 大林 (không qua /booking, /contact),
               và hiện luôn số ĐT / email trong nút để người dùng đọc được. */}
           <div className="mt-7 flex flex-col gap-3">
+            {/* Icon nằm ngoài cột chữ → 2 dòng chữ căn giữa với nhau, không bị icon đẩy lệch. */}
             <a
               href={CONTACT_TEL_HREF}
-              className="flex flex-col items-center justify-center gap-0.5 rounded-full bg-rose px-6 py-3.5 font-bold text-white transition-colors hover:bg-rose-hover"
+              className="flex items-center justify-center gap-2.5 rounded-full bg-rose px-6 py-3.5 font-bold text-white transition-colors hover:bg-rose-hover"
             >
-              <span className="inline-flex items-center gap-2.5">
-                <IconPhone className="h-5 w-5" />
-                {t("tel")}
+              <IconPhone className="h-5 w-5 shrink-0" />
+              <span className="flex min-w-0 flex-col items-center gap-0.5 leading-tight">
+                <span>{t("tel")}</span>
+                <span className="text-sm font-bold tracking-wide text-white/90">{CONTACT_TEL}</span>
               </span>
-              <span className="text-sm font-bold tracking-wide text-white/90">{CONTACT_TEL}</span>
             </a>
             <a
               href={CONTACT_EMAIL_HREF}
-              className="flex flex-col items-center justify-center gap-0.5 rounded-full border-2 border-rose bg-surface px-6 py-3.5 font-bold text-rose transition-colors hover:bg-rose-soft"
+              className="flex items-center justify-center gap-2.5 rounded-full border-2 border-rose bg-surface px-6 py-3.5 font-bold text-rose transition-colors hover:bg-rose-soft"
             >
-              <span className="inline-flex items-center gap-2.5">
-                <IconMail className="h-5 w-5" />
-                {t("mail")}
+              <IconMail className="h-5 w-5 shrink-0" />
+              <span className="flex min-w-0 flex-col items-center gap-0.5 leading-tight">
+                <span>{t("mail")}</span>
+                <span className="max-w-full break-all text-xs font-semibold text-rose/85">{CONTACT_EMAIL}</span>
               </span>
-              <span className="max-w-full break-all text-xs font-semibold text-rose/85">{CONTACT_EMAIL}</span>
             </a>
           </div>
         </div>

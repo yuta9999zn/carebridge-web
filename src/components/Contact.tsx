@@ -61,30 +61,30 @@ export default function Contact() {
           </p>
           {/* Yêu cầu khách 2026-08-14: dùng số ĐT/email thật của 大林 và hiện luôn trong nút. */}
           <div className="mb-10 flex flex-col gap-4 sm:flex-row">
-            {/* Grid 2 cột: cột 1 = icon (đứng cạnh chữ ở dòng 1), cột 2 = chữ dòng 1 + dòng 2.
-                Dòng 2 dùng col-start-2 nên căn giữa theo đúng cột chữ, không lệch. */}
+            {/* Dòng 1: icon dính sát chữ. Dòng 2: thụt trái 30px (= icon 20 + gap 10)
+                để tâm chữ dòng 2 trùng tâm chữ dòng 1. Xem Closing.tsx. */}
             <a
               href={CONTACT_TEL_HREF}
-              className="flex flex-1 items-center justify-center rounded-full bg-primary px-5 py-3.5 font-bold text-white transition-colors hover:bg-primary-hover"
+              className="block flex-1 rounded-full bg-primary px-5 py-3.5 text-center font-bold text-white transition-colors hover:bg-primary-hover"
             >
-              <span className="grid min-w-0 grid-cols-[auto_auto] items-center gap-x-2.5 gap-y-0.5 leading-tight">
+              <span className="inline-flex items-center gap-2.5 leading-tight">
                 <IconPhone className="h-5 w-5 shrink-0" />
-                <span className="justify-self-center">{CONTACT_TEL}</span>
-                <span className="col-start-2 justify-self-center text-xs font-normal text-white/80">
-                  {t("telNote")}
-                </span>
+                {CONTACT_TEL}
+              </span>
+              <span className="mt-0.5 block pl-[30px] text-xs font-normal leading-tight text-white/80">
+                {t("telNote")}
               </span>
             </a>
             <a
               href={CONTACT_EMAIL_HREF}
-              className="flex flex-1 items-center justify-center rounded-full border-2 border-primary bg-surface px-5 py-3.5 font-bold text-primary transition-colors hover:bg-mint"
+              className="block flex-1 rounded-full border-2 border-primary bg-surface px-5 py-3.5 text-center font-bold text-primary transition-colors hover:bg-mint"
             >
-              <span className="grid min-w-0 grid-cols-[auto_auto] items-center gap-x-2.5 gap-y-0.5 leading-tight">
+              <span className="inline-flex items-center gap-2.5 leading-tight">
                 <IconMail className="h-5 w-5 shrink-0" />
-                <span className="justify-self-center">{t("mail")}</span>
-                <span className="col-start-2 min-w-0 justify-self-center break-all text-xs font-semibold text-primary/80">
-                  {CONTACT_EMAIL}
-                </span>
+                {t("mail")}
+              </span>
+              <span className="mt-0.5 block break-all pl-[30px] text-xs font-semibold leading-tight text-primary/80">
+                {CONTACT_EMAIL}
               </span>
             </a>
           </div>

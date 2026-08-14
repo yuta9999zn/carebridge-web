@@ -74,7 +74,7 @@ Tỷ lệ: ~60% ivory/white, ~25% teal/mint, ~10% sage, ≤5% gold. Primary CTA 
 - 4 locale: **ja (mặc định), vi, en, ne** trong `messages/{locale}.json` (next-intl). Mọi thay đổi nội dung Home đồng bộ đủ 4 ngôn ngữ. Số/giá/giấy phép/tên riêng giữ nguyên.
 
 ## 9. SEO / Accessibility / Performance
-- **SEO**: Home có `metadata` (title「ネパール特定技能「介護」人材紹介｜株式会社桃吉 × ITMジャパン」+ description); semantic HTML.
+- **SEO**: Home + root layout dùng `metadata` title「介護現場へ海外人材を提供（momokichi × ITMJP）」(theo yêu cầu khách 2026-08-14) + description; semantic HTML.
 - **A11y (WCAG AA)**: `:focus-visible` ring teal; `prefers-reduced-motion`; FAQ accordion có `aria-expanded`/`aria-controls`/`role=region`, điều khiển bàn phím; nav `aria-current`/`aria-label`; alt text; link trong đoạn văn có underline/trạng thái nhận biết ngoài màu.
 - **Responsive**: mobile-first, không overflow ngang, CTA dễ bấm, menu mobile rõ, bảng giá → card trên màn nhỏ.
 - Hạn chế animation; tối ưu Core Web Vitals & hình ảnh.

@@ -8,7 +8,7 @@ import Cost from "@/components/Cost";
 import Closing from "@/components/Closing";
 
 export const metadata: Metadata = {
-  title: "介護現場に、確かな海外人材を｜株式会社momokichi × ITMジャパン",
+  title: "介護現場へ海外人材を提供（momokichi × ITMJP）",
   description:
     "介護事業者と登録支援機関の二社が、特定技能人材のご紹介から、現場の人材づくりまで支えます。",
 };

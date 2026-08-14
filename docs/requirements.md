@@ -16,7 +16,7 @@ Website giới thiệu **nhân lực特定技能「介護」 (chủ lực Nepal)
 **Mục tiêu Home**: dẫn dắt logic Vấn đề → Độ tin cậy → Giải pháp → Giáo dục → Quy trình → Chi phí → CTA; luôn rõ bước tiếp theo (đặt lịch hoặc gửi yêu cầu).
 
 ## 2. Bố cục Home (12 khối)
-1. **Header** — sticky, logo「ネパール介護人材ナビ」, nav (ホーム/会社情報/ビジョン/記事/予約/ご相談) có **active state**, CTA「相談予約」→ `/booking`, menu mobile hamburger.
+1. **Header** — sticky. ~~logo + nav + CTA相談予約 + hamburger~~ đã bỏ theo yêu cầu khách: menu ẩn (đợt trước) và **chữ「ネパール介護人材ナビ」ở góc trái đã xoá (2026-08-14)** → header chỉ còn nút chuyển ngôn ngữ, căn phải.
 2. **Hero** — eyebrow「介護 × 特定技能人材」; H1「介護現場に、確かな海外人材を。」; supporting text; lockup「株式会社桃吉 × 株式会社ITMジャパン」; CTA chính「無料相談を予約する」→ `/booking`, phụ「まずは問い合わせる」→ `/contact`.
 3. **Trust strip** — 介護事業者による現場視点 / 登録支援機関による受入支援 / 入国前教育から入職後支援まで / 全国対応.
 4. **私たちについて** — 2 card cân bằng: 桃吉 (bullets + link「会社概要を見る」→ trang công ty ngoài `https://momokichi2011.com`, mở tab mới) và ITMジャパン (bullets + **chỉ giấy phép đã xác nhận**).
@@ -27,7 +27,7 @@ Website giới thiệu **nhân lực特定技能「介護」 (chủ lực Nepal)
 9. **ご相談から定着まで** — timeline 01–07 (ヒアリング → 人材要件の整理 → 候補者のご提案 → 面接・採用決定 → 在留資格申請・入国準備 → 入国・受入 → 入職後の継続支援), có nhãn công ty phụ trách.
 10. **料金** — minh bạch (xem mục 4), CTA「具体的な費用を相談する」→ `/contact`.
 11. **FAQ** — 6 câu ảnh hưởng quyết định; accordion keyboard/aria accessible.
-12. **Final CTA** — nền deep teal; primary「無料相談を予約する」→ `/booking`, secondary「問い合わせを送る」→ `/contact`. **Không đặt form liên hệ trong Home** (form ở `/contact`).
+12. **Final CTA** (`Closing.tsx`) — card trắng, phụ trách 大林 (momokichi); primary「電話で相談する」và secondary「メールで相談する」. Theo yêu cầu khách 2026-08-14 **hai nút trỏ thẳng tới liên hệ, không qua trang trung gian**: `tel:` / `mailto:` lấy từ `CONTACT_TEL` `CONTACT_EMAIL` trong `src/content/site.ts` (trước đây là `/booking` và `/contact`). **Không đặt form liên hệ trong Home** (form ở `/contact`).
 
 ## 3. Phân biệt CTA
 - `/booking` = chọn ngày giờ và **đặt lịch** tư vấn. `/contact` = **gửi câu hỏi/yêu cầu/tình trạng tuyển dụng** qua form. Mọi CTA phải nêu rõ khác biệt này (kèm sub-label).

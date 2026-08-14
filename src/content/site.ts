@@ -9,3 +9,9 @@ export const SITE_NAME_SHORT = "momokichi × ITMJP";
 
 /** Title trang con: 「<tên trang> ｜ <WEB名称>」 */
 export const pageTitle = (page: string) => `${page} ｜ ${SITE_NAME}`;
+
+/** Liên hệ thật của phụ trách (大林 — momokichi) — yêu cầu khách 2026-08-14. */
+export const CONTACT_TEL = "090-1715-1157";
+export const CONTACT_TEL_HREF = `tel:${CONTACT_TEL.replace(/[^0-9+]/g, "")}`;
+export const CONTACT_EMAIL = "oobayashi@momokichi2011.com";
+export const CONTACT_EMAIL_HREF = `mailto:${CONTACT_EMAIL}`;

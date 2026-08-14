@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { IconPhone, IconMail } from "./Icons";
+import { CONTACT_TEL_HREF, CONTACT_EMAIL_HREF } from "@/content/site";
 
 export default async function Closing() {
   const t = await getTranslations("closing");
@@ -18,21 +18,22 @@ export default async function Closing() {
             <span className="ml-2">{t("personCompany")}</span>
           </p>
 
+          {/* Yêu cầu khách 2026-08-14: 2 nút gọi/mail trực tiếp cho 大林 (không qua /booking, /contact) */}
           <div className="mt-7 flex flex-col gap-3">
-            <Link
-              href="/booking"
+            <a
+              href={CONTACT_TEL_HREF}
               className="inline-flex items-center justify-center gap-2.5 rounded-full bg-rose px-7 py-4 font-bold text-white transition-colors hover:bg-rose-hover"
             >
               <IconPhone className="h-5 w-5" />
               {t("tel")}
-            </Link>
-            <Link
-              href="/contact"
+            </a>
+            <a
+              href={CONTACT_EMAIL_HREF}
               className="inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-rose bg-surface px-7 py-4 font-bold text-rose transition-colors hover:bg-rose-soft"
             >
               <IconMail className="h-5 w-5" />
               {t("mail")}
-            </Link>
+            </a>
           </div>
         </div>
       </div>

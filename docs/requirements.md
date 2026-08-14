@@ -74,7 +74,7 @@ Tỷ lệ: ~60% ivory/white, ~25% teal/mint, ~10% sage, ≤5% gold. Primary CTA 
 - 4 locale: **ja (mặc định), vi, en, ne** trong `messages/{locale}.json` (next-intl). Mọi thay đổi nội dung Home đồng bộ đủ 4 ngôn ngữ. Số/giá/giấy phép/tên riêng giữ nguyên.
 
 ## 9. SEO / Accessibility / Performance
-- **SEO**: Home + root layout dùng `metadata` title「介護現場へ海外人材を提供（momokichi × ITMJP）」(theo yêu cầu khách 2026-08-14) + description; semantic HTML.
+- **SEO**: WEB名称「介護現場へ海外人材を提供（momokichi × ITMJP）」(yêu cầu khách 2026-08-14) khai báo **một chỗ duy nhất** ở `src/content/site.ts` (`SITE_NAME`, `SITE_NAME_SHORT`, `pageTitle()`). Home + root layout dùng `SITE_NAME`; mọi trang con dùng `pageTitle("<tên trang>")` → 「<tên trang> ｜ WEB名称」; tiêu đề email dùng `【SITE_NAME_SHORT】`. Đổi tên site = sửa `site.ts`. Semantic HTML.
 - **A11y (WCAG AA)**: `:focus-visible` ring teal; `prefers-reduced-motion`; FAQ accordion có `aria-expanded`/`aria-controls`/`role=region`, điều khiển bàn phím; nav `aria-current`/`aria-label`; alt text; link trong đoạn văn có underline/trạng thái nhận biết ngoài màu.
 - **Responsive**: mobile-first, không overflow ngang, CTA dễ bấm, menu mobile rõ, bảng giá → card trên màn nhỏ.
 - Hạn chế animation; tối ưu Core Web Vitals & hình ảnh.

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Contact from "@/components/Contact";
+import { pageTitle } from "@/content/site";
 
-export const metadata: Metadata = { title: "ご相談・お問い合わせ ｜ ネパール介護人材ナビ" };
+export const metadata: Metadata = { title: pageTitle("ご相談・お問い合わせ") };
 
 export default function ContactPage() {
   return (

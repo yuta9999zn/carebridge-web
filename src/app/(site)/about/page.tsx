@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { getLocale } from "next-intl/server";
 import PageHeader from "@/components/PageHeader";
 import { getContent } from "@/lib/store";
+import { pageTitle } from "@/content/site";
 
-export const metadata: Metadata = { title: "会社情報 ｜ ネパール介護人材ナビ" };
+export const metadata: Metadata = { title: pageTitle("会社情報") };
 export const dynamic = "force-dynamic";
 
 export default async function AboutPage() {

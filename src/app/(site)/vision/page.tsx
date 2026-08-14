@@ -3,8 +3,9 @@ import { getLocale } from "next-intl/server";
 import PageHeader from "@/components/PageHeader";
 import { getContent } from "@/lib/store";
 import { iconByKey } from "@/components/Icons";
+import { pageTitle } from "@/content/site";
 
-export const metadata: Metadata = { title: "ビジョン・方針 ｜ ネパール介護人材ナビ" };
+export const metadata: Metadata = { title: pageTitle("ビジョン・方針") };
 export const dynamic = "force-dynamic";
 
 export default async function VisionPage() {

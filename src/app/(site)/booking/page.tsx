@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import PageHeader from "@/components/PageHeader";
 import BookingForm from "@/components/BookingForm";
+import { pageTitle } from "@/content/site";
 
-export const metadata: Metadata = { title: "相談予約 ｜ ネパール介護人材ナビ" };
+export const metadata: Metadata = { title: pageTitle("相談予約") };
 
 export default async function BookingPage() {
   const t = await getTranslations("booking");

@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import PageHeader from "@/components/PageHeader";
 import Faq from "@/components/Faq";
+import { pageTitle } from "@/content/site";
 
-export const metadata: Metadata = { title: "個人情報の取扱い ｜ ネパール介護人材ナビ" };
+export const metadata: Metadata = { title: pageTitle("個人情報の取扱い") };
 
 export default async function PrivacyPage() {
   const t = await getTranslations("privacy");

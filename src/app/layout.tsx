@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
+import { SITE_NAME } from "@/content/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "介護現場へ海外人材を提供（momokichi × ITMJP）",
+  title: SITE_NAME,
   description:
     "介護現場に、確かなネパール人材を。専門教育を受けた特定技能「介護」のネパール人材を、登録支援機関として日本の介護施設へ確実にお繋ぎします。",
   openGraph: {
-    title: "介護現場へ海外人材を提供（momokichi × ITMJP）",
+    title: SITE_NAME,
     description:
       "介護のプロ（株式会社桃吉）と、国の許可を持つ登録支援機関（ITMジャパン）が、特定技能人材をご紹介します。",
     type: "website",

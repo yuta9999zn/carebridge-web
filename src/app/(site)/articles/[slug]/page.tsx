@@ -6,6 +6,7 @@ import { gradientFor, findBySlug, relatedFrom, mostReadFrom, localize, type Bloc
 import { getPublishedArticles, getLocalizedCategories } from "@/lib/store";
 import ReactionBar from "@/components/ReactionBar";
 import { IconArrow } from "@/components/Icons";
+import { pageTitle } from "@/content/site";
 
 export const dynamic = "force-dynamic";
 
@@ -18,7 +19,7 @@ export async function generateMetadata({
   const a = findBySlug(await getPublishedArticles(), slug);
   if (!a) return { title: "記事が見つかりません" };
   return {
-    title: `${a.title} ｜ ネパール介護人材ナビ`,
+    title: pageTitle(a.title),
     description: a.lead,
     openGraph: { title: a.title, description: a.lead, type: "article" },
   };

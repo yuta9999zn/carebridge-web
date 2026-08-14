@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { createInquiry } from "@/lib/store";
 import { sendMail, ADMIN_NOTIFY_EMAIL } from "@/lib/mailer";
+import { SITE_NAME_SHORT } from "@/content/site";
 
 /**
  * POST /api/inquiries — tiếp nhận yêu cầu tư vấn (DE-01).
@@ -75,7 +76,7 @@ export async function POST(req: Request) {
   if (ADMIN_NOTIFY_EMAIL) {
     void sendMail({
       to: ADMIN_NOTIFY_EMAIL,
-      subject: "【ネパール介護人材ナビ】新しいお問い合わせ",
+      subject: `【${SITE_NAME_SHORT}】新しいお問い合わせ`,
       html: `<p>新しいお問い合わせが届きました。</p>
         <ul>
           <li>法人・施設: ${parsed.data.facilityName}</li>

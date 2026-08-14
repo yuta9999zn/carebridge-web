@@ -5,8 +5,9 @@ import ArticlesView from "@/components/ArticlesView";
 import Stats from "@/components/Stats";
 import { getPublishedArticles, getLocalizedCategories } from "@/lib/store";
 import { localize } from "@/content/articles";
+import { pageTitle } from "@/content/site";
 
-export const metadata: Metadata = { title: "記事・活動レポート ｜ ネパール介護人材ナビ" };
+export const metadata: Metadata = { title: pageTitle("記事・活動レポート") };
 export const dynamic = "force-dynamic";
 
 export default async function ArticlesPage() {

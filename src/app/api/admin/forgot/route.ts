@@ -1,5 +1,6 @@
 import { setResetToken } from "@/lib/store";
 import { sendMail } from "@/lib/mailer";
+import { SITE_NAME_SHORT } from "@/content/site";
 
 /**
  * Quên mật khẩu: tạo token reset (1 giờ) + gửi email link reset (nếu cấu hình SMTP).
@@ -22,7 +23,7 @@ export async function POST(req: Request) {
     console.log(`[forgot] reset link for ${email}: ${resetUrl}`);
     await sendMail({
       to: email,
-      subject: "【ネパール介護人材ナビ】パスワード再設定",
+      subject: `【${SITE_NAME_SHORT}】パスワード再設定`,
       html: `<p>パスワード再設定のリンクです（1時間有効）：</p><p><a href="${resetUrl}">${resetUrl}</a></p>`,
     });
     return Response.json({ success: true, ...(isDev ? { resetUrl: `/admin/reset?token=${token}` } : {}) });

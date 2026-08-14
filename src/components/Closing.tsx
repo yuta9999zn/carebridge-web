@@ -21,25 +21,30 @@ export default async function Closing() {
           {/* Yêu cầu khách 2026-08-14: gọi/mail trực tiếp cho 大林 (không qua /booking, /contact),
               và hiện luôn số ĐT / email trong nút để người dùng đọc được. */}
           <div className="mt-7 flex flex-col gap-3">
-            {/* Icon nằm ngoài cột chữ → 2 dòng chữ căn giữa với nhau, không bị icon đẩy lệch. */}
+            {/* Grid 2 cột: cột 1 = icon (đứng cạnh nhãn ở dòng 1), cột 2 = nhãn + số/email.
+                Số/email dùng col-start-2 nên căn giữa theo đúng cột chữ, không lệch. */}
             <a
               href={CONTACT_TEL_HREF}
-              className="flex items-center justify-center gap-2.5 rounded-full bg-rose px-6 py-3.5 font-bold text-white transition-colors hover:bg-rose-hover"
+              className="flex items-center justify-center rounded-full bg-rose px-6 py-3.5 font-bold text-white transition-colors hover:bg-rose-hover"
             >
-              <IconPhone className="h-5 w-5 shrink-0" />
-              <span className="flex min-w-0 flex-col items-center gap-0.5 leading-tight">
-                <span>{t("tel")}</span>
-                <span className="text-sm font-bold tracking-wide text-white/90">{CONTACT_TEL}</span>
+              <span className="grid min-w-0 grid-cols-[auto_auto] items-center gap-x-2.5 gap-y-0.5 leading-tight">
+                <IconPhone className="h-5 w-5 shrink-0" />
+                <span className="justify-self-center">{t("tel")}</span>
+                <span className="col-start-2 justify-self-center text-sm font-bold tracking-wide text-white/90">
+                  {CONTACT_TEL}
+                </span>
               </span>
             </a>
             <a
               href={CONTACT_EMAIL_HREF}
-              className="flex items-center justify-center gap-2.5 rounded-full border-2 border-rose bg-surface px-6 py-3.5 font-bold text-rose transition-colors hover:bg-rose-soft"
+              className="flex items-center justify-center rounded-full border-2 border-rose bg-surface px-6 py-3.5 font-bold text-rose transition-colors hover:bg-rose-soft"
             >
-              <IconMail className="h-5 w-5 shrink-0" />
-              <span className="flex min-w-0 flex-col items-center gap-0.5 leading-tight">
-                <span>{t("mail")}</span>
-                <span className="max-w-full break-all text-xs font-semibold text-rose/85">{CONTACT_EMAIL}</span>
+              <span className="grid min-w-0 grid-cols-[auto_auto] items-center gap-x-2.5 gap-y-0.5 leading-tight">
+                <IconMail className="h-5 w-5 shrink-0" />
+                <span className="justify-self-center">{t("mail")}</span>
+                <span className="col-start-2 min-w-0 justify-self-center break-all text-xs font-semibold text-rose/85">
+                  {CONTACT_EMAIL}
+                </span>
               </span>
             </a>
           </div>
